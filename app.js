@@ -5,7 +5,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.post("/with", (req, res) => {
-  console.log(req.body);
+  console.log(req.body, req.body.payload);
   res.status(200).json({ data: "ok" });
 });
 
