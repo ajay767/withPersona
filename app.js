@@ -9,6 +9,6 @@ app.post("/with", (req, res) => {
   res.status(200);
 });
 
-app.listen(4040, () => {
-  console.log("server is up at 4040");
+app.listen(process.env.PORT, () => {
+  console.log(`server is up at ${process.env.PORT}`);
 });
