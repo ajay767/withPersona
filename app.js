@@ -6,7 +6,7 @@ app.use(express.json());
 
 app.post("/with", (req, res) => {
   console.log(req.body);
-  res.status(200);
+  res.status(200).json({ data: "ok" });
 });
 
 app.listen(process.env.PORT, () => {
